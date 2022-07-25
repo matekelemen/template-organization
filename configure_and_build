@@ -1,0 +1,7 @@
+SOURCE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+BUILD_DIR="${SOURCE_DIR}/build"
+
+mkdir -p "${BUILD_DIR}"
+
+cmake "-H${SOURCE_DIR}" "-B${BUILD_DIR}"
+cmake --build "${BUILD_DIR}"
