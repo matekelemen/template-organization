@@ -6,7 +6,7 @@ An example of separating declarations from implementations for templates with li
 
 All C++ files are located in *src*.
 - A shared library (unimaginatively named *library*) is built from *src/sources*.
-- An executable is built for each source file in *src/drivers*.
+- An executable is built for each source file in *src/drivers*, and linked against *library*.
 
 ## Build
 
